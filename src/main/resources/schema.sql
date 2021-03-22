@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS buildings;
+DROP TABLE IF EXISTS elevators;
+
+CREATE TABLE users(
+  id int NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE buildings(
+  id int NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE elevators(
+  id int NOT NULL AUTO_INCREMENT,
+  name VARCHAR(128) NOT NULL,
+  floor int,
+  floorlist VARCHAR(128),
+  PRIMARY KEY (id)
+);
